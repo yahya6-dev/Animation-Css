@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <style>
+     @keyframes move_down_up {
+       from {
+        transform: translateY(0px)
+       }
+  
+       to {
+        transform: translateY(150px)
+       }
+     }
+
+     @keyframes move_left_to_right {
+       from {
+         transform: translateX(0px)
+       }
+
+       to {
+         transform: translateX(100px);
+       }
+     }
+
+   
+     .info-box {
+       background-color:rgba(60,35,10,0.7);
+       width:100px;
+       height:100px;
+       animation-name: move_down_up, move_left_to_right;
+       animation-duration: 5s,2s;
+       animation-delay:1s,6s;
+       animation-iteration-count:1;
+      }
+   </style>
+  </head>
+  <body>
+    <div>
+	<div class="info-box"></div>
+    </div>
+  
+
+</body></html>

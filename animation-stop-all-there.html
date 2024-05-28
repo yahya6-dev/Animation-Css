@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      @keyframes step {
+        0% {
+	  top:10%;
+        }
+
+        10% {
+ 	  top:20%;
+
+        }
+
+        30% {
+          top:30%;
+        }
+
+        40% {
+          top:40%;
+
+        }
+
+        100% {
+          top:70%;
+        }
+
+      }
+
+      @keyframes increase {
+        0% {
+          width:0
+
+        }
+
+        100% {
+          width:100%;
+        }
+
+      }
+
+      .box {
+        animation-name: increase, step;
+	animation-duration: 3s, 2s;
+	animation-iteration-count: 4, 6;
+	background:rgb(200,200,200);
+	width:100px;
+	height:100px;
+	position:absolute;
+	animation-direction:reverse;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  
+
+</body></html>
